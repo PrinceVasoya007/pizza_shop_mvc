@@ -6,7 +6,7 @@ namespace pizza_shop_MVC.Models;
 public partial class Account
 {
     public int Id { get; set; }
-
+  [required]
     public string Email { get; set; } = null!;
 
     public string Password { get; set; } = null!;
