@@ -23,14 +23,13 @@ menu_icon.onclick =function(){
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const passwordInput = document.querySelector('input[name="password"]');
-  const togglePassword = document.getElementById('password');
+togglePassword.addEventListener('click', function () {
+  // Toggle input type between 'password' and 'text'
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
 
-  togglePassword.addEventListener('click', function () {
-      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-      passwordInput.setAttribute('type', type);
-      this.querySelector('i').classList.toggle('bi-eye-slash-fill');
-      this.querySelector('i').classList.toggle('bi-eye-fill');
-  });
+  // Toggle the eye icon
+  const icon = this.querySelector('i');
+  icon.classList.toggle('bi-eye-slash-fill');
+  icon.classList.toggle('bi-eye-fill');
 });
