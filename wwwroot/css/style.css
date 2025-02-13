@@ -1,0 +1,155 @@
+.username {
+
+    background: url("../images/icons/profile-svgrepo-com.svg") no-repeat right !important;
+    background-size: 10px;
+    background-color: #F2F2F2 !important;
+
+}
+
+.password{
+
+    background: url("../images/icons/eye-password-hide-svgrepo-com\ \(2\).svg") no-repeat  right !important;
+    background-size: 10px;
+    background-color: #F2F2F2 !important;
+
+}
+
+.pizaashop_img {
+
+    width: 70px;
+    height: 70px;
+}
+
+.search_icon{
+
+    right: 132px;
+}
+
+.bg-color {
+
+    background-color: #9fd9e6;
+}
+
+/* @media screen and  (max-width:767px) {
+
+    .login_img{
+        height:50vh !important ;
+    }
+    
+} */
+
+.bg-navbar {
+    background-color: #0066A8;
+}
+
+.text-color {
+
+    color: #0066A8;
+}
+
+.icon {
+
+    border: 1px solid white !important;
+    border-radius: 100px;
+    background-color: white;
+
+}
+
+.simple-btn {
+
+    background-color: white;
+    color: #0066A8;
+    border: 1px solid #0066A8;
+}
+
+.file_border {
+
+    border: 2px dotted black !important;
+}
+
+.active-btn {
+
+    background-color: #0066A8;
+    color: white;
+}
+
+.bg-container {
+    background-color: #F2F2F2;
+}
+
+.link_active:active {
+
+    text: #0066A8;
+    text-decoration: underline;
+    offset: 10px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    /* Adds underline to active tab */
+    color: #0066A8 !important;
+    /* Sets text color to Bootstrap danger (red) */
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+    background-color: #F2F2F2;
+}
+
+.showme {
+    display: none;
+  }
+  
+  .show-icon:hover .showme {
+    display: block;
+  }
+
+@media screen and (max-width:890PX) {
+
+    .menu-toggle {
+
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width:890PX) {
+
+    .menu-toggle {
+
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:991px) {
+
+    .show_bg_color {
+
+        background-color: #9fd9e6;
+
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+    .show_bg_color {
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),  url("../images/dominos_background.jpg");
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+
+    }
+}
