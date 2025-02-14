@@ -15,11 +15,11 @@ public partial class Role
 
     public int? ModifiedBy { get; set; }
 
-    public int CreatedBy { get; set; }
+    public int? CreatedBy { get; set; }
 
     public virtual ICollection<Account> Accounts { get; } = new List<Account>();
 
-    public virtual User CreatedByNavigation { get; set; } = null!;
+    public virtual User? CreatedByNavigation { get; set; }
 
     public virtual User? ModifiedByNavigation { get; set; }
 

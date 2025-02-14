@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {}
+    "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {}
   },
   "projects": {
-    "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {
+    "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
+        "projectUniqueName": "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
         "projectName": "pizza_shop_MVC",
-        "projectPath": "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
+        "projectPath": "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
         "packagesPath": "C:\\Users\\pca30\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\pizza_shop_MVC\\obj\\",
+        "outputPath": "d:\\Project\\pizza_shop_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca30\\AppData\\Roaming\\NuGet\\NuGet.Config"
