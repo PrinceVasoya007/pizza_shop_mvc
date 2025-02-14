@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
         "packagesPath": "C:\\Users\\pca30\\.nuget\\packages\\",
         "outputPath": "d:\\Project\\pizza_shop_MVC\\obj\\",
+=======
+    "D:\\tatvasoft\\project\\pizza_shop_mvc\\pizza_shop_MVC.csproj": {}
+  },
+  "projects": {
+    "D:\\tatvasoft\\project\\pizza_shop_mvc\\pizza_shop_MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tatvasoft\\project\\pizza_shop_mvc\\pizza_shop_MVC.csproj",
+        "projectName": "pizza_shop_MVC",
+        "projectPath": "D:\\tatvasoft\\project\\pizza_shop_mvc\\pizza_shop_MVC.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\tatvasoft\\project\\pizza_shop_mvc\\obj\\",
+>>>>>>> 1013046a434f40a48f370893b115c7192c50d75d
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pca30\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -32,7 +46,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -70,6 +90,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

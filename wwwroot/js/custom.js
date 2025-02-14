@@ -46,6 +46,7 @@ try {
     console.error('An error occurred:', error);
 }
 
+<<<<<<< HEAD
 
 // $(document).ready(function() {
 //   // Toggle password visibility
@@ -80,3 +81,15 @@ try {
 //   });
 // });
 
+=======
+togglePassword.addEventListener('click', function () {
+  // Toggle input type between 'password' and 'text'
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+
+  // Toggle the eye icon
+  const icon = this.querySelector('i');
+  icon.classList.toggle('bi-eye-slash-fill');
+  icon.classList.toggle('bi-eye-fill');
+});
+>>>>>>> 1013046a434f40a48f370893b115c7192c50d75d
