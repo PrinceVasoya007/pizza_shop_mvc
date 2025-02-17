@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using pizza_shop_MVC.Models;
+using pizza_shop_MVC.Services;
 using pizza_shop_MVC.ViewModels;
 
 namespace pizza_shop_MVC.Controllers;
@@ -16,11 +17,15 @@ public class LoginController : Controller
     // }
 
     private readonly PizzaShopContext _db;
+     private readonly EmailService _emailService;
 
-    public LoginController(PizzaShopContext db)
+
+    public LoginController(PizzaShopContext db , EmailService emailService)
+
     {
 
         _db = db;
+        _emailService = emailService;   
     }
 
     
@@ -46,33 +51,37 @@ public class LoginController : Controller
             {
                 return RedirectToAction("Index", "Home");
             }
-            // ModelState.AddModelError("Email", "Email or Password is invalid");
-            return RedirectToAction("Index", "Login");
+            ModelState.AddModelError("Email", "Email or Password is invalid");
+            // return RedirectToAction("Index", "Login");
         }
         return View();
     }
+ 
+    public IActionResult ResetPassword( string email)
+    {
+           
 
-    public IActionResult ResetPassword()
-    {  
-        
-        return View( );
-    }
+            // var model = new ResetPasswordModel { Email = email };
+                 ViewBag.Email ="Prince@gmail.com";
+            return View();
+        }
 
     //Post method
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult ResetPassword(Account account)
+    public   Task<IActionResult>  ResetPassword(ResetPasswordModel account)
     {
         if (ModelState.IsValid == true)
         {    
             var user = _db.Accounts.FirstOrDefault(u => u.Email == account.Email);
             if (user != null)
             {
-                return RedirectToAction("Index", "Login");
+                _emailService.SendEmailAsync(account.Email, "Your password reset link");
+                return Task.FromResult<IActionResult>(RedirectToAction("Index", "Login"));
             }
             ModelState.AddModelError("Email", "Email does not exist");
         }
-        return View();
+        return Task.FromResult<IActionResult>(View(account));
 
     }
 

@@ -90,3 +90,11 @@ D:\Project\pizza_shop_MVC\bin\Debug\net7.0\pizza_shop_MVC.runtimeconfig.json
 D:\Project\pizza_shop_MVC\bin\Debug\net7.0\pizza_shop_MVC.pdb
 D:\Project\pizza_shop_MVC\obj\Debug\net7.0\pizza_shop_MVC.genruntimeconfig.cache
 D:\Project\pizza_shop_MVC\obj\Debug\net7.0\ref\pizza_shop_MVC.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\MailKit.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\MimeKit.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.Formats.Asn1.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.Text.Encoding.CodePages.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll

@@ -1,3 +1,4 @@
+@using Microsoft.EntityFrameworkCore
 @addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers;
 @model pizza_shop_MVC.ViewModels.LoginModel;
 
@@ -60,8 +61,14 @@
             </label>
           </div>
 
-          <a  asp-action="ResetPassword" class=" text-decoration-none "> Forgot Password?
-          </a>
+         @if (Model?.Email != null)
+                    {
+                        <a asp-action="ResetPassword" asp-route-email="@Model.Email" class="text-decoration-none">Forgot Password?</a>
+                    }
+                    else
+                    {
+                        <a asp-action="ResetPassword" class="text-decoration-none">Forgot Password?</a>
+                    }
         </div>
 
 
@@ -84,3 +91,6 @@
 }
  *@
 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
