@@ -29,7 +29,7 @@
 
 
         <div class="position-relative">
-          <input type="text" name="Email" asp-for="Email" placeholder="Email*"
+          <input type="text" name="Email"  asp-for="Email" placeholder="Email*"
             class="  bg-light mt-3 mb-2 p-3 form-control" id="email">
           <span class="position-absolute" style="right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
             <i class="bi bi-person-fill"></i>
@@ -55,19 +55,19 @@
 
         <div class=" d-flex  justify-content-between  mt-4 ">
           <div class="">
-            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
+            <input class="form-check-input me-2" asp-for="Checkbox"  value="true" type="checkbox"  id="flexCheckDefault">
+            <label class="form-check-label" asp-for="Checkbox"    for="flexCheckDefault">
               remember me
             </label>
           </div>
 
          @if (Model?.Email != null)
                     {
-                        <a asp-action="ResetPassword" asp-route-email="@Model.Email" class="text-decoration-none">Forgot Password?</a>
+                        <a asp-action="ForgotPassword" asp-route-email="@Model.Email" class="text-decoration-none">Forgot Password?</a>
                     }
                     else
                     {
-                        <a asp-action="ResetPassword" class="text-decoration-none">Forgot Password?</a>
+                        <a asp-action="ForgotPassword" class="text-decoration-none">Forgot Password?</a>
                     }
         </div>
 

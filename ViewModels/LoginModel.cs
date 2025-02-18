@@ -13,4 +13,6 @@ public class LoginModel
        
     public string Password { get; set; } = null!;
 
+    public bool Checkbox { get; set; }
+
 }
