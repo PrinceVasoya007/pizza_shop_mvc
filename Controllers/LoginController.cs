@@ -75,7 +75,7 @@ public class LoginController : Controller
             // ViewBag.ForgotEmail = account.Email;
 
             var user = _db.Accounts.FirstOrDefault(u => u.Email == account.Email && u.Password == account.Password);
-          string role = user?.RoleId.ToString() ?? string.Empty;
+            string role = user?.RoleId.ToString() ?? string.Empty;
 
             if (user != null)
             {
@@ -89,8 +89,18 @@ public class LoginController : Controller
                     IsEssential = true
 
                 };
-                HttpContext.Response.Cookies.Append("Authorize", (string)token, cookieOptions);
-                return RedirectToAction( "Edit");
+                if (HttpContext.Request.Cookies.TryGetValue("Authorize", out var userEmail))
+                {
+                    return RedirectToAction("Edit");
+
+
+                }
+                else
+                {
+                    HttpContext.Response.Cookies.Append("Authorize", (string)token, cookieOptions);
+                    return RedirectToAction("Edit");
+
+                }
             }
             ModelState.AddModelError("Email", "Email or Password is invalid");
             // return RedirectToAction("Index", "Login");
@@ -251,17 +261,17 @@ public class LoginController : Controller
         return View(model);
     }
 
-[CustomAuthorize("1")]
+    [CustomAuthorize("1")]
     public IActionResult Edit()
     {
 
         return View();
     }
 
-      public IActionResult AccessDenied()
-        {
-            return View();
-        }
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
 
     //  function to send email
     private void SendEmail(string toEmail, string subject, string body)
