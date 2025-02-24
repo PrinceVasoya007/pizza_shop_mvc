@@ -1,3 +1,4 @@
+using pizza_shop_MVC.Services;
 using Microsoft.EntityFrameworkCore;
 using pizza_shop_MVC.Models;
 
@@ -9,6 +10,9 @@ builder.Services.AddDbContext<PizzaShopContext>(option => option.UseNpgsql(
     builder.Configuration.GetConnectionString("DefaultConnection")
 ));
 
+// Register Services
+// builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 var app = builder.Build();
 

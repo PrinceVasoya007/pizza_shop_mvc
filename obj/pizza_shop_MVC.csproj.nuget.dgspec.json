@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {}
+    "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {}
   },
   "projects": {
-    "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {
+    "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
+        "projectUniqueName": "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
         "projectName": "pizza_shop_MVC",
-        "projectPath": "d:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
+        "projectPath": "D:\\Project\\pizza_shop_MVC\\pizza_shop_MVC.csproj",
         "packagesPath": "C:\\Users\\pca30\\.nuget\\packages\\",
-        "outputPath": "d:\\Project\\pizza_shop_MVC\\obj\\",
+        "outputPath": "D:\\Project\\pizza_shop_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca30\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[4.10.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -65,6 +69,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.0, )"
             }
           },
           "imports": [

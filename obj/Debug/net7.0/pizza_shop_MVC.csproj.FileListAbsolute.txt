@@ -98,3 +98,14 @@ D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.Text.Encoding.CodePages.dll
 D:\Project\pizza_shop_MVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
 D:\Project\pizza_shop_MVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.Bcl.Memory.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.Bcl.TimeProvider.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\pizza_shop_MVC\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
